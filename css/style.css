@@ -114,7 +114,6 @@ a {
     background-color: var(--background-footer-color);
     text-align: center;
 }
-
 .hero-title {
     padding-top: 200px;
     margin-bottom: 30px;
@@ -148,8 +147,7 @@ a {
 /* Section */
 
 .section {
-padding-top: 94px;
-padding-bottom: 94px;
+    margin-top: 94px;
 }
 .section-title {
     margin-bottom: 50px;
@@ -178,11 +176,6 @@ padding-bottom: 94px;
 .team {
     background-color: var(--secondary-background-color);
 }
-.team .container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .team-item {
     background-color: var(--white-color);
 }
