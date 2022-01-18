@@ -294,10 +294,12 @@ margin-top: 20px;
 
 .project-item {
     background-color: var(--white-color);
-    border: 1px solid var(--border-project-color);
 }
 .project-item-content {
     padding: 20px 24px;
+    border-right: 1px solid var(--border-project-color);
+    border-bottom: 1px solid var(--border-project-color);
+    border-left: 1px solid var(--border-project-color);
 }
 
 .project-item-content .title {
