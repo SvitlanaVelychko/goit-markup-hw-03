@@ -72,6 +72,11 @@ a {
 
 /* верхняя линия */
 
+.header {
+    padding-top: 120px;
+    padding-bottom: 32px;
+    background-color: salmon;
+}
 .logo-web, .logo-studio {
     color: var(--accent-color);
     font-family: Raleway;
