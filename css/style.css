@@ -1,13 +1,15 @@
 /* цвет основного текста: #757575 */
 /* цвет вторичного текста: #212121 */
+/* акцент: #2196F3 */
 /* белый цвет: #FFFFFF */
 /* черный цвет: #000000 */
-/* акцент: #2196F3 */
-/* вторичный цвет фона: #F5F4FA */
+/* цвет фона: #E5E5E5 */
+/* вторичный цвет фона страницы: #F5F4FA */
 /* цвет фона футера, героя: #2F303A */
 /* цвет фона кнопки заказать услугу: #188CE8 */
 /* цвет текста почты и телефона в футере: rgba(255, 255, 255, 0.6) */
 /* цвет канта карточек проекта: #EEEEEEE */
+/* цвет границы хэдера: #ECECEC */
 
 /* -----Общие стили----- */
 :root {
@@ -16,11 +18,17 @@
     --accent-color: #2196F3;
     --white-color: #FFFFFF;
     --black-color: #000000;
+    --background-color: #E5E5E5;
     --secondary-background-color: #F5F4FA;
     --background-footer-color: #2F303A;
     --background-color-btn-order: #188CE8;
     --text-adress-color: rgba(255, 255, 255, 0.6);
     --border-project-color: #EEEEEE;
+    --border-header-color: #ECECEC;
+}
+
+html {
+    background-color: var(--background-color);
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -34,6 +42,9 @@ img {
 }
 
 body {
+    width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
     background-color: var(--white-color);
     color: var(--primary-text-color);
     font-family: "Roboto", sans-serif;
@@ -74,6 +85,10 @@ a {
 /*-----Стили вебстудии----- */
 
 /* верхняя линия */
+
+.header {
+    border-bottom: 1px solid var(--border-header-color);
+}
 
 .header .container {
     display: flex;
@@ -305,7 +320,6 @@ text-align: center;
 /* Footer */
 
 .footer {
-    border: 1px solid var(--black-color);
     padding-top: 60px;
     padding-bottom: 60px;
 
