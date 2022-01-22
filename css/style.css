@@ -286,9 +286,10 @@ a {
 
 .team-item {
     flex-basis: calc(100% / 4 - var(--card-gap));
-    border: none;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     margin-left: var(--card-gap);
 
     background-color: var(--white-color);
@@ -324,6 +325,10 @@ text-align: center;
     background-color: var(--background-footer-color);
 }
 
+.footer a {
+    display: block;
+}
+
 .footer .logo-web, .footer .logo-studio {
     color:  var(--accent-color);
     font-family: Raleway;
@@ -332,19 +337,18 @@ text-align: center;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-bottom: 20px;
 }
 
 .footer .logo-studio {
     color: var(--white-color);
 }
 
-.address-list {
-    margin-top: 20px;
+.address-list .item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .link-address {
-    margin-bottom: 9px;
-
     color: var(--white-color);
     font-style: normal;
     font-size: 14px;
@@ -356,8 +360,6 @@ text-align: center;
 }
 
 .address-list .link-mail {
-    margin-bottom: 9px;
-    
     color: var(--text-adress-color);
     font-style: normal;
     font-size: 14px;
@@ -431,6 +433,10 @@ text-align: center;
     margin-left: var(--card-gap);
 
     background-color: var(--white-color);
+}
+
+.project-item-link {
+    display: block;
 }
 
 .project-item-content {
